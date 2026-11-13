@@ -54,3 +54,20 @@ ul{padding-left:20px;margin:8px 0;font-size:15px}li{margin:4px 0}
 </div>
 
 <div class="foot">© 2026 CNS.corp – ILBOUDO Régis Canisius. Tous droits réservés.</div>
+
+<!--TOOLE_MAJ_AUTO--><script>
+(function(){
+var U="https://jbjeqxubpqqypysfsubd.supabase.co",K="sb_publishable_bYKnve2bIrsZu1XG_g-syw_8CnA8qPR";
+fetch(U+"/rest/v1/rpc/latest_app_update",{method:"POST",cache:"no-store",headers:K.indexOf("sb_")===0?{apikey:K,"Content-Type":"application/json"}:{apikey:K,Authorization:"Bearer "+K,"Content-Type":"application/json"},body:"{}"})
+.then(function(r){return r.json()}).then(function(d){
+ if(Array.isArray(d))d=d[0];
+ if(!d||!d.version_code||!/^https:\/\/jbjeqxubpqqypysfsubd\.supabase\.co\/storage\/v1\/object\/public\/apk\//.test(d.url))return;
+ document.querySelectorAll("a,button").forEach(function(a){
+  if(/Télécharger\s+TÕÕLé/.test(a.textContent)){
+   a.textContent="Télécharger TÕÕLé "+d.version_name;
+   if(a.tagName==="A")a.href=d.url;else a.onclick=function(){location.href=d.url};
+  }});
+}).catch(function(){});
+})();
+</script>
+
