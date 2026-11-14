@@ -1,0 +1,11 @@
+CNS.corp — copie corrigée (nom du dossier : cns-faso)
+Ton site d'origine n'est pas modifié. Le design est identique.
+Les boutons "Télécharger TÕÕLé" et la mise à jour automatique (TOOLE_MAJ_AUTO) sont intacts.
+
+Changements :
+- index.html / tooole.html : vocaux 60 s -> 5 minutes ; équipe, questions fréquentes, actualités automatiques (accueil)
+- applications.html : badge "Disponible" ; actualites.html : carte automatique (version et notes lues dans la base)
+- tooole.html : texte "Captures d'écran" corrigé
+- tooole-politique.html / tooole-conditions.html : téléphone au lieu d'e-mail ; ajout chiffrement, prestataires, permissions (FR + EN)
+- nouveau fichier : cns-plus.js
+Non copiés (restent dans ton dépôt) : apk/ et bak_legal/
