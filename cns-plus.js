@@ -14,3 +14,13 @@ fetch(U+"/rest/v1/rpc/latest_app_update",{method:"POST",cache:"no-store",headers
  if(H)H.innerHTML='<h2>Actualités</h2>'+h+'<p><a href="actualites.html" style="color:#0a7fa0">Toutes les actualités →</a></p></div>';
 }).catch(function(){});
 })();
+
+/* ===== CNS WAOUH ===== */
+(function(){try{
+var b=document.createElement('div');b.id='cns-bar';document.body.appendChild(b);
+var t=document.createElement('button');t.id='cns-top';t.innerHTML='&#8593;';t.setAttribute('aria-label','Haut de page');t.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};document.body.appendChild(t);
+window.addEventListener('scroll',function(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?h.scrollTop/m*100:0)+'%';t.classList.toggle('show',h.scrollTop>400)},{passive:true});
+var els=document.querySelectorAll('section,article,[class*=card],.hero h1,.hero p');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+els.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)})}
+}catch(e){}})();

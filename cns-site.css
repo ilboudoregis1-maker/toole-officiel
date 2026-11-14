@@ -105,3 +105,23 @@ a[style*="67e8f9"]{color:var(--blue)!important;text-decoration:underline}
 .tabs .fab .ic{font-size:24px;padding:0}
 @media (min-width:760px){#tooole ul{columns:2;column-gap:36px}#tooole li{break-inside:avoid}}
 @media (max-width:820px){.cns-hero2{grid-template-columns:1fr;gap:28px;text-align:center}.lead{margin-inline:auto}.acts{justify-content:center}}
+
+/* ===== CNS WAOUH ===== */
+html{scroll-behavior:smooth}
+body{background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#2563eb;color:#fff}
+header,nav{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+header{background:rgba(255,255,255,.86)!important;box-shadow:0 1px 0 rgba(37,99,235,.12),0 10px 34px rgba(37,99,235,.07)}
+h1,h2,h3{letter-spacing:-.02em}
+h2::after{content:"";display:block;width:54px;height:4px;margin:12px auto 0;border-radius:4px;background:linear-gradient(90deg,#1d4ed8,#38bdf8)}
+a.btn,.btn,.button,a[class*=btn],button{border-radius:999px;transition:transform .25s ease,box-shadow .25s ease,filter .25s ease}
+a.btn:hover,.btn:hover,.button:hover,a[class*=btn]:hover,button:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(37,99,235,.35);filter:brightness(1.06)}
+[class*=card],article{border-radius:22px;border:1px solid rgba(37,99,235,.12);box-shadow:0 10px 30px rgba(15,23,42,.06);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+[class*=card]:hover,article:hover{transform:translateY(-8px)!important;box-shadow:0 22px 50px rgba(37,99,235,.18);border-color:rgba(37,99,235,.35)}
+img[src*=logo],img[src*=tooole]{border-radius:20px;box-shadow:0 12px 28px rgba(37,99,235,.2)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+#cns-bar{position:fixed;top:0;left:0;height:4px;width:0;z-index:99999;background:linear-gradient(90deg,#1d4ed8,#38bdf8);box-shadow:0 0 12px rgba(56,189,248,.8);transition:width .1s}
+#cns-top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border:0;border-radius:50%;background:linear-gradient(135deg,#1d4ed8,#38bdf8);color:#fff;font-size:22px;cursor:pointer;z-index:9999;opacity:0;pointer-events:none;box-shadow:0 10px 26px rgba(37,99,235,.4);transition:opacity .3s}
+#cns-top.show{opacity:1;pointer-events:auto}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
