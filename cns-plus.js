@@ -1,4 +1,4 @@
-/* CNS.corp — actualités automatiques (même source que le bouton Télécharger) + style des questions fréquentes */
+/* TÕÕLé — actualités automatiques (même source que le bouton Télécharger) + style des questions fréquentes */
 (function(){
 var U="https://jbjeqxubpqqypysfsubd.supabase.co",K="sb_publishable_bYKnve2bIrsZu1XG_g-syw_8CnA8qPR";
 var st=document.createElement("style");st.textContent="details.card summary{cursor:pointer;font-weight:700;color:#0a3d91;list-style:none}details.card summary::-webkit-details-marker{display:none}details.card summary::after{content:'+';float:right;color:#00a8c6}details.card[open] summary::after{content:'−'}details.card p{margin:10px 0 0}";document.head.appendChild(st);

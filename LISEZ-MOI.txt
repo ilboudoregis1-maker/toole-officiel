@@ -1,4 +1,4 @@
-CNS.corp — copie corrigée (nom du dossier : cns-faso)
+TÕÕLé — copie corrigée (nom du dossier : cns-faso)
 Ton site d'origine n'est pas modifié. Le design est identique.
 Les boutons "Télécharger TÕÕLé" et la mise à jour automatique (TOOLE_MAJ_AUTO) sont intacts.
 
